@@ -1,5 +1,5 @@
 require 'rspec'
-require './src/peak_finder'
+require './class-1/peak_finder'
 
 describe "Peak finder 1D" do
   describe ".peak_finder_linear" do

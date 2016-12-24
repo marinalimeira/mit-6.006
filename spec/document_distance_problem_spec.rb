@@ -1,5 +1,5 @@
 require 'rspec'
-require './src/document_distance_problem'
+require './class-2/document_distance_problem'
 
 describe 'Document Distance Problem' do
   describe '.count_words' do
