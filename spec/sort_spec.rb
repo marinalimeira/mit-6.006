@@ -1,9 +1,10 @@
 require 'rspec'
 require './class-3/sort'
+require './class-7/sort'
 
 describe "Sort" do
-  let(:arr) { [4, -2, 3, 5, 94, 2, 1] }
-  let(:sorted) { [-2, 1, 2, 3, 4, 5, 94] } 
+  let(:arr) { [4, 9, 3, 5, 6, 2, 1] }
+  let(:sorted) { [1, 2, 3, 4, 5, 6, 9] } 
 
   describe "Insertion Sort" do
     it { expect(insertion_sort arr).to eq sorted }
@@ -19,6 +20,10 @@ describe "Sort" do
 
     it { expect(merge a, b).to eq [1, 2, 3, 4, 5, 9] }
     it { expect(merge b, a).to eq [1, 2, 3, 4, 5, 9] }
+  end
+
+  describe "Counting Sort" do
+    it { expect(counting_sort arr).to eq sorted }
   end
 end
 
